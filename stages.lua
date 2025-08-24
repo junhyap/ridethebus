@@ -13,7 +13,10 @@ end
 function stages.loseStage(gameState)
     gameState.playerMoney = 0
     gameState.highestMultiplier = 1
-    require("screens").goToStaging()
+    gameState.lost = true
+    gameState.screen = "lost"
+    gameState.guessResult = ""
+    require("buttons").create(gameState)
 end
 
 function stages.playColourGuess(gameState, label)

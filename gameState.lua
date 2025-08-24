@@ -1,9 +1,10 @@
 local gameState = {
-    screen = "menu", -- menu, staging, game
+    screen = "menu", -- menu, staging, game, lost
     currentStop = nil,
     guessResult = "",
     passedStage = false,
     finished = false,
+    lost = false,
     currentGame = {},
     multiplier = 1,
     buttons = {},
